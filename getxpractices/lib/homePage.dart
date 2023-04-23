@@ -13,7 +13,7 @@ class MyHomePage extends StatelessWidget {
         toolbarTextStyle:TextStyle(wordSpacing:3,color:Colors.deepPurple  ),) ,
       body:Center(
         child:ElevatedButton(onPressed: (){
-          Get.to(Science());
+          Get.toNamed("/jadu");
           ///Get.off(Science());
           ///Get.offAll(Science());
         }, child:Text("Next Page")) ,

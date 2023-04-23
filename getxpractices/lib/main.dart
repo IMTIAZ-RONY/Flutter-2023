@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getxpractices/science.dart';
 
 import 'homePage.dart';
 import 'package:get/get.dart';
@@ -19,7 +20,13 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.deepPurple,
       ),
-      home: MyHomePage(),
+      initialRoute: '/',
+      getPages: [
+        GetPage(name: "/", page:()=>MyHomePage(),transition:Transition.circularReveal,
+            transitionDuration:Duration(seconds: 10) ,  ),
+        GetPage(name: "/jadu", page:()=>Science(),transition:Transition.zoom,
+          transitionDuration:Duration(seconds: 10) ,  ),
+      ],
     );
   }
 }
