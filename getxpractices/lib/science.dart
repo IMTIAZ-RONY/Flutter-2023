@@ -11,8 +11,10 @@ class Science extends StatelessWidget {
       appBar:AppBar(title:Text("Science",style:TextStyle(fontSize:16,color:Colors.red ,fontWeight:FontWeight.bold ,letterSpacing:0.6, ) ,),) ,
       body:Center(
 
-        child:Text('''  The world stands on Science.Morning to night we wrap by Science blessing  ''',
-        style:TextStyle(color:Colors.amber,fontSize:16, ) ,) ,
+        child:ElevatedButton(onPressed: (){
+          Get.toNamed("/");
+          
+        }, child:Text ("Return Home Page"),),
 
 
       ) ,
