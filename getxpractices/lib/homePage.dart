@@ -14,8 +14,8 @@ class MyHomePage extends StatelessWidget {
       body:Center(
         child:ElevatedButton(onPressed: (){
           Get.toNamed("/jadu");
-          ///Get.off(Science());
-          ///Get.offAll(Science());
+          ///Get.offNamed("/jadu");
+          ///Get.offAllNamed("/jadu");
         }, child:Text("Next Page")) ,
       ) ,
 

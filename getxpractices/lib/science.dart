@@ -13,7 +13,8 @@ class Science extends StatelessWidget {
 
         child:ElevatedButton(onPressed: (){
           Get.toNamed("/");
-          
+          ///Get.offNamed("/");
+          ///Get.offAllNamed("/");
         }, child:Text ("Return Home Page"),),
 
 
